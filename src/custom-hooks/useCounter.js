@@ -18,7 +18,7 @@ const useCounter = (action) => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [action]);
   return counter;
 };
 
